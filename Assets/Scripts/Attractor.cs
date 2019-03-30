@@ -19,6 +19,7 @@ public class Attractor : MonoBehaviour
         else
         {
             Magnet.RemoveAttractor(this);
+            BlackHole.RegisterSink();
             Destroy(gameObject);
         }
     }
